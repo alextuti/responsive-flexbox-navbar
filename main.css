@@ -1,0 +1,196 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar{
+  display: flex;
+  background: #333;
+  height: 85px;
+  flex-direction: row;
+  
+  color: #ccc;
+  justify-content: space-between;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 14px;
+}
+.mainbar{
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+    justify-content:flex-start;
+}
+.utilities{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.logo{
+    flex-basis: 150px;
+    margin-left: 20px;
+}
+.courses{
+    flex-basis: auto;
+    min-width: 95px;
+    font-size: 13px;
+    padding: 10px 5px 10px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: rgb(117, 111, 111);
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    
+}
+.search{
+    flex-basis: auto;
+    min-width: 325px;
+}
+.business{
+    display: block;
+    flex-basis: auto;
+    min-width: 75px;
+    text-decoration: none;
+}
+.personal{
+    display: block;
+    flex-basis: auto;
+    min-width: 65px;
+    text-decoration: none;
+}
+.live{
+    display: block;
+    flex-basis: auto;
+    min-width: 85px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.getstarted{
+    text-decoration: none;
+    flex-basis: auto;
+    min-width: 75px;
+}
+.login{
+    text-decoration: none;
+    flex-basis: auto;
+    min-width: 50px;
+}
+
+#search{
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color:  rgb(117, 111, 111);
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    outline: none;
+}
+.mainbar > div, a, form{
+    margin-right: 15px;
+}
+#getstarted{
+    padding: 12px 24px;
+    border-radius: 2px;
+    background-color: rgb(255,0,255);
+    background-clip: padding-box;
+}
+#live{
+    background: linear-gradient(to left, red, pink, orange);
+    color: transparent;
+    background-clip: text;
+    
+}
+.courses, #getstarted, #login{
+    color: white;
+}
+.business, .personal{
+    color: white;
+    opacity: 0.5;
+}
+.search{
+    margin-right: 30px;
+}
+.courses:hover{
+    opacity: 0.5;
+}
+.login:hover{
+    opacity: 0.5;
+}
+input[type=text]{
+    color: #ccc;
+    padding: 10px 10px 10px 10px;
+}
+.business:hover{
+    opacity: 1;
+}
+.personal:hover{
+    opacity: 1;
+}
+.getstarted:hover{
+    opacity: 0.5;
+}
+@media (max-width: 1166px){
+    .business{
+        display: none;
+    }
+    .personal{
+        display: none;
+    }
+    .live{
+        display: none;
+    }
+}
+
+@media (max-width: 896px){
+    .getstarted, .login{
+        display: none;
+    }
+    .mainbar{
+        flex-basis: 800px;
+    }
+    .utilities{
+        flex-basis: 96px;
+    }
+    .search{
+        flex: 1 auto;
+    }
+}
+
+@media (max-width: 776px){
+    .courses{
+        display: none;
+    }
+}
+
+@media (max-width: 630px){
+    .logo{
+        flex-basis: 50px;
+    }
+    .logo-img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    .mainbar{
+        flex-basis: auto;
+        min-width: 25px;
+    }
+    .search{
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
+    .utilities{
+        flex-basis: auto;
+        min-width: 45px;
+    }
+    #search{
+        width: max-content;
+    }
+}
